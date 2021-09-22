@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 void main() {
-    unsigned long cont=0l;
-    
-    for(unsigned int i=0; i<100000; i++){
-        cont = cont+1;
+
+    unsigned long int cont=0l;
+    unsigned long int vet[1000000];
+    for(unsigned long int i=0; i<1000000; i++){
+        vet[i] = cont++;
         printf("%lu", cont);
         printf("\r");
         
