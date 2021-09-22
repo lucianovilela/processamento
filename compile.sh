@@ -14,6 +14,13 @@ function runC(){
     time ./Main
     cd ..
 }
+function runPython(){
+    echo "Python"
+    cd python
+    time python Main.py
+    cd ..
+}
 
 runC
 runJava
+runPython
